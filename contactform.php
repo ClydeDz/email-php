@@ -6,7 +6,7 @@
     See this page for more info:
     http://www.html-form-guide.com/contact-form/simple-php-contact-form.html
 */
-require_once("./include/fgcontactform.php");
+require_once("include/fgcontactform.php");
 
 $formproc = new FGContactForm();
 
