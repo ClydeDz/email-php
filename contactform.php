@@ -6,7 +6,7 @@
     See this page for more info:
     http://www.html-form-guide.com/contact-form/simple-php-contact-form.html
 */
-require_once("include/fgcontactform.php");
+require_once("./include/fgcontactform.php");
 
 $formproc = new FGContactForm();
 
@@ -18,7 +18,7 @@ $formproc->AddRecipient('clyd94@gmail.com'); //<<---Put your email address here
 
 //2. For better security. Get a random tring from this link: http://tinyurl.com/randstr
 // and put it here
-$formproc->SetFormRandomKey('CnRrspl1FyEylUj');
+$formproc->SetFormRandomKey('TJK7LVzJoBDdI5i');
 
 
 if(isset($_POST['submitted']))
