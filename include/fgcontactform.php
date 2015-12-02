@@ -342,13 +342,13 @@ class FGContactForm
     {
         $ret = true;
         //security validations
-        //if(empty($_POST[$this->GetFormIDInputName()]) ||
-        //  $_POST[$this->GetFormIDInputName()] != $this->GetFormIDInputValue() )
-       // {
+        if(empty($_POST[$this->GetFormIDInputName()]) ||
+          $_POST[$this->GetFormIDInputName()] != $this->GetFormIDInputValue() )
+       {
             //The proper error is not given intentionally
-        //    $this->add_error("Automated submission prevention: case 1 failed");
-        //    $ret = false;
-//}
+         $this->add_error("Automated submission prevention: case 1 failed");
+         $ret = false;
+		}
 
         //This is a hidden input field. Humans won't fill this field.
         if(!empty($_POST[$this->GetSpamTrapInputName()]) )
