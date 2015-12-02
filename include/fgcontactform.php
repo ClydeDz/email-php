@@ -19,8 +19,8 @@ Interface to Captcha handler
 */
 class FG_CaptchaHandler
 {
-    function Validate() { return false;}
-    function GetError(){ return '';}
+   // function Validate() { return false;}
+    //function GetError(){ return '';}
 }
 /*
 FGContactForm is a general purpose contact form class
