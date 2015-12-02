@@ -48,7 +48,7 @@ class FGContactForm
     {
         $this->receipients = array();
         $this->errors = array();
-        $this->form_random_key = 'HTgsjhartag';
+        $this->form_random_key = 'TJK7LVzJoBDdI5i';
         $this->conditional_field='';
         $this->arr_conditional_receipients=array();
         $this->fileupload_fields=array();
