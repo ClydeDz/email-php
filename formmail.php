@@ -37,7 +37,7 @@ $bcc = "";
 
 // referers.. domains/ips that you will allow forms to
 // reside on.
-$referers = array ('somedomain.com','www.somedomain.com','121.0.0.111');
+$referers = array ('http://a1pd.azurewebsites.net/','www.a1pd.azurewebsites.net/','104.210.88.111');
 
 // banned emails, these will be email addresses of people
 // who are blocked from using the script (requested)
