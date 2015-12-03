@@ -1,3 +1,4 @@
+<!----------------Website crafted by Clyde D'Souza http://goo.gl/8yXVaA --------------------------->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +6,14 @@
 	<!----responsive----->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!---meta---->
-<meta name="Keywords" content=""/> 
-<meta name="author" content="">
-<meta name="description" content="">
-<meta itemprop="image" content="" />
-<meta name="og_site_name" property="og:site_name" content=""/> 
-<meta name="og_url" property="og:url" content=""/>
+<meta name="Keywords" content="A1 Professional Designs"/> 
+<meta name="author" content="A1 Professional Designs">
+<meta name="description" content="For the best designs in print and digital media, contact Roshini Daruwala at 09 534 9786">
+<meta itemprop="image" content=assets/img/favicon.png"" />
+<meta name="og_site_name" property="og:site_name" content="A1 Professional Designs"/> 
+<meta name="og_url" property="og:url" content="http://www.a1pd.co.nz"/>
 	<!----favicon------->
+<link rel="shortcut icon" href="assets/img/favicon.png">
 <title>A1 Professional Designs</title>
 	<!-- CSS -->
 <link href="assets/css/bootstrap.css" rel="stylesheet" />	
