@@ -37,7 +37,7 @@ $bcc = "";
 
 // referers.. domains/ips that you will allow forms to
 // reside on.
-$referers = array ('https://a1pd.herokuapp.com/demo_html.html');
+$referers = array ('herokuapp.com');
 
 // banned emails, these will be email addresses of people
 // who are blocked from using the script (requested)
