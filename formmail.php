@@ -37,7 +37,7 @@ $bcc = "";
 
 // referers.. domains/ips that you will allow forms to
 // reside on.
-$referers = array ('http://a1pd.azurewebsites.net/','a1pd.azurewebsites.net/','104.210.88.111');
+$referers = array ('http://a1pd.herokuapp.com/');
 
 // banned emails, these will be email addresses of people
 // who are blocked from using the script (requested)
@@ -105,7 +105,6 @@ function check_banlist($banlist, $email) {
 // contributed by some one who's name got lost.. Thanks
 // goes out to him any way.
 function check_referer($referers) {
-	return true;//work around
    if (count($referers)) {
       $found = false;
 
