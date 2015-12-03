@@ -105,6 +105,7 @@ function check_banlist($banlist, $email) {
 // contributed by some one who's name got lost.. Thanks
 // goes out to him any way.
 function check_referer($referers) {
+	return true;//work around
    if (count($referers)) {
       $found = false;
 
