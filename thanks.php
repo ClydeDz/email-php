@@ -1,16 +1,18 @@
 <!-------------Website crafted by Clyde D'Souza  http://goo.gl/8yXVaA ----------------->
-<?php    
-	$ToEmail = 'clyd94@gmail.com';
-    $EmailSubject = 'A1PD: Online query'; 
-    $mailheader = "From: ".$_POST["email"]."\r\n"; 
-    $mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
-    $mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
-    $MESSAGE_BODY = "".$_POST["fullName"]." sent you a message\n"; 
-    $MESSAGE_BODY .= "Message: ".$_POST["message"]."\n";
-    $MESSAGE_BODY .= "\nYou can reply back at ".$_POST["email"]."\n";
-    mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
-?> 
-
+<?php
+require 'vendor/autoload.php';
+$ip = getenv('SENDGRID-USERNAME');
+$api = getenv('SENDGRID-APIKEY');
+$sendgrid = new SendGrid($api);
+$email    = new SendGrid\Email();
+ 
+$email->addTo("clyd94@gmail.com")
+      ->setFrom("clyd94@gmail.com")
+      ->setSubject("Sending with SendGrid is Fun")
+      ->setHtml("and easy to do anywhere, even with PHP");
+ 
+$sendgrid->send($email);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
