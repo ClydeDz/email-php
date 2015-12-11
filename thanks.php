@@ -3,16 +3,17 @@
 require ('sendgrid-php/sendgrid-php.php');
 $ip = getenv('SENDGRID-USERNAME');
 $api = getenv('SENDGRID-APIKEY');
-$sendgrid = new sendgrid($ip,$api);
-echo $ip;
-$email    = new sendgrid\email();
- 
-$email->addto("clyd94@gmail.com")
-      ->setfrom("clyd94@gmail.com")
-      ->setsubject("sending with sendgrid is fun")
-      ->sethtml("and easy to do anywhere, even with php");
- 
+
+$sendgrid = new SendGrid($ip, $api);
+$email    = new SendGrid\Email();
+
+$email->addTo("clyd94@gmail.com")
+      ->setFrom("clyd94@gmail.com")
+      ->setSubject("Sending with SendGrid is Fun")
+      ->setHtml("and easy to do anywhere, even with PHP");
+
 $sendgrid->send($email);
+
  ?>
 <!DOCTYPE html>
 <html lang="en">
