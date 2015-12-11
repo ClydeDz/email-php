@@ -1,8 +1,8 @@
 <!-------------Website crafted by Clyde D'Souza  ----------------->
 <?php
-require ('sendgrid-php/sendgrid-php.php');
-$ip = getenv('SENDGRID-USERNAME');
-$api = getenv('SENDGRID-APIKEY');
+require("sendgrid-php/sendgrid-php.php");
+$ip = getenv("SENDGRID-USERNAME");
+$api = getenv("SENDGRID-APIKEY");
 
 $sendgrid = new SendGrid($api);
 $email    = new SendGrid\Email();
