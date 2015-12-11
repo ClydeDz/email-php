@@ -1,18 +1,18 @@
 <!-------------Website crafted by Clyde D'Souza  ----------------->
 <?php
-require 'vendor/autoload.php';
-$ip = getenv('sendgrid-username');
-$api = getenv('sendgrid-apikey');
-$sendgrid = new sendgrid($ip,$api);
-echo $ip;
-$email    = new sendgrid\email();
+// require 'vendor/autoload.php';
+// $ip = getenv('sendgrid-username');
+// $api = getenv('sendgrid-apikey');
+// $sendgrid = new sendgrid($ip,$api);
+// echo $ip;
+// $email    = new sendgrid\email();
  
-$email->addto("clyd94@gmail.com")
-      ->setfrom("clyd94@gmail.com")
-      ->setsubject("sending with sendgrid is fun")
-      ->sethtml("and easy to do anywhere, even with php");
+// $email->addto("clyd94@gmail.com")
+      // ->setfrom("clyd94@gmail.com")
+      // ->setsubject("sending with sendgrid is fun")
+      // ->sethtml("and easy to do anywhere, even with php");
  
-$sendgrid->send($email);
+// $sendgrid->send($email);
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,7 +63,7 @@ $sendgrid->send($email);
 	<br/>
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<p>Thank you <?php echo $_POST["fullName"]; ?> for your email. We will get in touch with you shortly.</p>
+			<p>Thank you <?php echo $_POST["fullName"]; ?> for your <?php echo getenv('sendgrid-username'); ?>email. We will get in touch with you shortly.</p>
 		</div>
 	</div>
 	<br/>
