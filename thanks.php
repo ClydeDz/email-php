@@ -1,18 +1,18 @@
 <!-------------Website crafted by Clyde D'Souza  ----------------->
 <?php
-// require 'vendor/autoload.php';
-// $ip = getenv('SENDGRID-USERNAME');
-// $api = getenv('SENDGRID-APIKEY');
-// $sendgrid = new SendGrid($ip,$api);
-// echo $ip;
-// $email    = new SendGrid\Email();
+require 'vendor/autoload.php';
+$ip = getenv('sendgrid-username');
+$api = getenv('sendgrid-apikey');
+$sendgrid = new sendgrid($ip,$api);
+echo $ip;
+$email    = new sendgrid\email();
  
-// $email->addTo("clyd94@gmail.com")
-      // ->setFrom("clyd94@gmail.com")
-      // ->setSubject("Sending with SendGrid is Fun")
-      // ->setHtml("and easy to do anywhere, even with PHP");
+$email->addto("clyd94@gmail.com")
+      ->setfrom("clyd94@gmail.com")
+      ->setsubject("sending with sendgrid is fun")
+      ->sethtml("and easy to do anywhere, even with php");
  
-// $sendgrid->send($email);
+$sendgrid->send($email);
  ?>
 <!DOCTYPE html>
 <html lang="en">
