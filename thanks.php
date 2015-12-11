@@ -63,7 +63,7 @@
 	<br/>
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<p>Thank you <?php echo $_POST["fullName"]; ?> for your <?php echo getenv('sendgrid-username'); ?>email. We will get in touch with you shortly.</p>
+			<p>Thank you <?php echo $_POST["fullName"]; ?> for your <?php echo getenv('SENDGRID-USERNAME'); ?>email. We will get in touch with you shortly.</p>
 		</div>
 	</div>
 	<br/>
