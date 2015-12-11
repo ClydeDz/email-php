@@ -12,7 +12,8 @@ $email->addTo("clyd94@gmail.com")
       ->setSubject("Sending with SendGrid is Fun")
       ->setHtml("and easy to do anywhere, even with PHP");
 
-$sendgrid->send($email);
+$emailresult=$sendgrid->send($email);
+echo $emailresult;
 
  ?>
 <!DOCTYPE html>
