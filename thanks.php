@@ -1,6 +1,5 @@
 <!-------------Website crafted by Clyde D'Souza  ----------------->
 <?php
-require 'vendor/autoload.php';
 $ip = getenv('SENDGRID-USERNAME');
 $api = getenv('SENDGRID-APIKEY');
 $sendgrid = new sendgrid($ip,$api);
