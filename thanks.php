@@ -3,7 +3,8 @@
 require 'vendor/autoload.php';
 $ip = getenv('SENDGRID-USERNAME');
 $api = getenv('SENDGRID-APIKEY');
-$sendgrid = new SendGrid($api);
+$sendgrid = new SendGrid($ip,$api);
+echo $ip;
 $email    = new SendGrid\Email();
  
 $email->addTo("clyd94@gmail.com")

@@ -38,7 +38,6 @@ function checkMessage(){
 }
 function checkContactForm(){
 	if(checkFullName()==true && checkEmail()==true && checkMessage()==true){
-		alert("success");
 		return true;
 		//document.getElementById("contactForm").submit();
 	}
