@@ -4,7 +4,7 @@ require ('sendgrid-php/sendgrid-php.php');
 $ip = getenv('SENDGRID-USERNAME');
 $api = getenv('SENDGRID-APIKEY');
 
-$sendgrid = new SendGrid($ip, $api);
+$sendgrid = new SendGrid($api);
 $email    = new SendGrid\Email();
 
 $email->addTo("clyd94@gmail.com")
